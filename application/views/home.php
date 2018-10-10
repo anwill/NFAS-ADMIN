@@ -4,7 +4,7 @@
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                        <pre><?php echo $club; ?></pre>
+                        <pre><?php var_dump($club); ?></pre>
                     </div>
                 </div>
             </div>
