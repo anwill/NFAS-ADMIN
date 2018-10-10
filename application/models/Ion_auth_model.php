@@ -1071,7 +1071,7 @@ class Ion_auth_model extends CI_Model
                              ->get($this->tables['Clubs']);
 
             $user->club = $club;
-            
+
 			$password = $this->hash_password_db($user->id, $password);
 
 			if ($password === TRUE)
