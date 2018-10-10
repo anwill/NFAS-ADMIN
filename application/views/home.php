@@ -195,27 +195,7 @@
         <main class="content-wrapper">
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                        <div class="mdc-card">
-                            <div class="mdc-layout-grid__inner">
-                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-7">
-                                    <section class="purchase__card_section">
-                                        <p>Like what you see? Check out our premium version for more.</p>
-                                    </section>
-                                </div>
-                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-5">
-                                    <section class="purchase__card_section d-flex align-item-center">
-                                        <a href="https://github.com/BootstrapDash/Material-Admin" target="_blank" class="mdc-button mdc-button--stroked mdc-button--dense" data-mdc-auto-init="MDCRipple">
-                                            download free version
-                                        </a>
-                                        <a href="https://www.bootstrapdash.com/product/material-admin/" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense" data-mdc-auto-init="MDCRipple">
-                                            purchase
-                                        </a>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
                         <div class="mdc-layout-grid__inner w-100">
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
