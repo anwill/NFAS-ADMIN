@@ -121,11 +121,7 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="mdc-list-item mdc-drawer-item purchase-link">
-                        <a href="https://www.bootstrapdash.com/product/material-admin/" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense mdc-drawer-link" data-mdc-auto-init="MDCRipple">
-                            Upgrade To Pro
-                        </a>
-                    </div>
+                    
                 </nav>
             </div>
         </nav>
@@ -195,7 +191,7 @@
         <main class="content-wrapper">
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
-                    
+
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
                         <div class="mdc-layout-grid__inner w-100">
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
