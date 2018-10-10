@@ -1064,14 +1064,12 @@ class Ion_auth_model extends CI_Model
 			$user = $query->row();
 
 			// Get the club associated with user
-            $club_query = $this->db->select('*')
+            $club_query = $this->db->select('Club.*')
                              ->join('Club_Users','Club_Users.club_id = Club.id')
                              ->join('users', 'users.id = Club_Users.user_id')
                              ->where('users.id', $user->id)
-                             ->group_by('user.id')
-                             ->get_compiled_select($this->tables['Club']);
-            var_dump($club_query);
-            exit();
+                             ->group_by('users.id')
+                             ->get($this->tables['Club']);
             if ($club_query->num_rows() === 1) {
                 $user->club = $club_query->row();
             } else {
