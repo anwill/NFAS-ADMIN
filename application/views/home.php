@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Material Admin</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../node_modules/mdi/css/materialdesignicons.min.css">
     <!-- endinject -->
     <!-- plugin css for this page -->
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <!-- endinject -->
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="../../images/favicon.png" />
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         <nav class="mdc-persistent-drawer__drawer">
             <div class="mdc-persistent-drawer__toolbar-spacer">
                 <a href="index.html" class="brand-logo">
-                    <img src="images/logo.svg" alt="logo">
+                    <img src="../../images/logo.svg" alt="logo">
                 </a>
             </div>
             <div class="mdc-list-group">
@@ -36,7 +36,7 @@
                         </a>
                     </div>
                     <div class="mdc-list-item mdc-drawer-item">
-                        <a class="mdc-drawer-link" href="pages/forms/basic-forms.html">
+                        <a class="mdc-drawer-link" href="../../pages/forms/basic-forms.html">
                             <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
                             Forms
                         </a>
@@ -50,12 +50,12 @@
                         <div class="mdc-expansion-panel" id="ui-sub-menu">
                             <nav class="mdc-list mdc-drawer-submenu">
                                 <div class="mdc-list-item mdc-drawer-item">
-                                    <a class="mdc-drawer-link" href="pages/ui-features/buttons.html">
+                                    <a class="mdc-drawer-link" href="../../pages/ui-features/buttons.html">
                                         Buttons
                                     </a>
                                 </div>
                                 <div class="mdc-list-item mdc-drawer-item">
-                                    <a class="mdc-drawer-link" href="pages/ui-features/typography.html">
+                                    <a class="mdc-drawer-link" href="../../pages/ui-features/typography.html">
                                         Typography
                                     </a>
                                 </div>
@@ -63,13 +63,13 @@
                         </div>
                     </div>
                     <div class="mdc-list-item mdc-drawer-item">
-                        <a class="mdc-drawer-link" href="pages/ui-features/tables.html">
+                        <a class="mdc-drawer-link" href="../../pages/ui-features/tables.html">
                             <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
                             Tables
                         </a>
                     </div>
                     <div class="mdc-list-item mdc-drawer-item">
-                        <a class="mdc-drawer-link" href="pages/charts/chartjs.html">
+                        <a class="mdc-drawer-link" href="../../pages/charts/chartjs.html">
                             <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
                             Charts
                         </a>
@@ -428,19 +428,19 @@
 </div>
 <!-- body wrapper -->
 <!-- plugins:js -->
-<script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../node_modules/material-components-web/dist/material-components-web.min.js"></script>
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 <!-- endinject -->
 <!-- Plugin js for this page-->
-<script src="node_modules/chart.js/dist/Chart.min.js"></script>
-<script src="node_modules/progressbar.js/dist/progressbar.min.js"></script>
+<script src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+<script src="../../node_modules/progressbar.js/dist/progressbar.min.js"></script>
 <!-- End plugin js for this page-->
 <!-- inject:js -->
-<script src="js/misc.js"></script>
-<script src="js/material.js"></script>
+<script src="../../js/misc.js"></script>
+<script src="../../js/material.js"></script>
 <!-- endinject -->
 <!-- Custom js for this page-->
-<script src="js/dashboard.js"></script>
+<script src="../../js/dashboard.js"></script>
 <!-- End custom js for this page-->
 </body>
 
