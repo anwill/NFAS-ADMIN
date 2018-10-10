@@ -1070,10 +1070,10 @@ class Ion_auth_model extends CI_Model
                              ->where('users.id', $user->id)
                              ->group_by('users.id')
                              ->get_compiled_select($this->tables['Club']);
-            var_dump($club_query);
-            exit();
             if ($club_query->num_rows() === 1) {
                 $user->club = $club_query->row();
+                var_dump($user);
+                exit();
             } else {
                 $this->set_error('login_unsuccessful: club not configured');
                 return FALSE;
