@@ -12,14 +12,14 @@ class Booking extends CI_Controller {
 
         $this->lang->load('auth');
 
-
+        $this->load->model('club_model');
     }
 
     public function index()
     {
         if ($this->ion_auth->logged_in()) {
             $data = Array();
-            var_dump($this->session->userdata);
+            $data['club'] = $this->club_model->details();
             $this->_render_page('home', $data);
         } else {
             $this->load->view('auth/login');
