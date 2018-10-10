@@ -71,9 +71,11 @@
                                                     echo form_submit('submit', lang('login_submit_btn'), $attributes);?>
 
                                             </div>
+                                            <?php if ($message) { ?>
                                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                                                 <div id="infoMessage"><?php echo $message;?></div>
                                             </div>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 </form>
