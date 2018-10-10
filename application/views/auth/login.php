@@ -24,7 +24,7 @@
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
-                        <div id="infoMessage"><?php echo $message;?></div>
+
                     </div>
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
                         <div class="mdc-card">
@@ -66,10 +66,13 @@
                                             </div>
                                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
 
-                                                <?php
+                                            <?php
                                                     $attributes = array('class'=>'mdc-button mdc-button--raised w-100', 'data-mdc-auto-init'=>'MDCRipple');
                                                     echo form_submit('submit', lang('login_submit_btn'), $attributes);?>
 
+                                            </div>
+                                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                                <div id="infoMessage"><?php echo $message;?></div>
                                             </div>
                                         </div>
                                     </div>
