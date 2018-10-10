@@ -18,11 +18,7 @@ class Booking extends CI_Controller {
     public function index()
     {
         $data = Array();
-
-
-
         $this->_render_page('home', $data);
-
     }
 
     public function register() {
