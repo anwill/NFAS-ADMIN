@@ -15,6 +15,6 @@ class Club_model extends CI_Model
         $club_id = $this->session->userdata['club_id'];
         return $this->db->select('*')
                         ->where('id', $club_id)
-                        ->get('Club')->row()
+                        ->get('Club')->row();
     }
 }
