@@ -1063,6 +1063,15 @@ class Ion_auth_model extends CI_Model
 		{
 			$user = $query->row();
 
+			// Get the club associated with user
+            $club = $this->db->select('*')
+                             ->join('Club_Users','Club_Users.club_id = Club.id')
+                             ->join('users', 'users.id = Club_Users.user_id')
+                             ->where('users.id', $user->id)
+                             ->get($this->tables['Clubs']);
+
+            $user->club = $club;
+            
 			$password = $this->hash_password_db($user->id, $password);
 
 			if ($password === TRUE)
