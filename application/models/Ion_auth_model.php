@@ -1068,6 +1068,7 @@ class Ion_auth_model extends CI_Model
                              ->join('Club_Users','Club_Users.club_id = Club.id')
                              ->join('users', 'users.id = Club_Users.user_id')
                              ->where('users.id', $user->id)
+                             ->group_by('user.id')
                              ->get_compiled_select($this->tables['Club']);
             var_dump($club_query);
             exit();
