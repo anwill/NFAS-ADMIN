@@ -17,8 +17,13 @@ class Booking extends CI_Controller {
 
     public function index()
     {
-        $data = Array();
-        $this->_render_page('home', $data);
+        if ($this->ion_auth->logged_in()) {
+            $data = Array();
+            $this->_render_page('home', $data);
+        } else {
+            $this->load->view('auth/login');
+        }
+
     }
 
     public function register() {
