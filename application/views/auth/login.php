@@ -62,7 +62,7 @@
                                                 </div>
                                             </div>
                                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center justify-content-end">
-                                                <a href="#">><?php echo lang('login_forgot_password');?></a>
+                                                <a href="#"><?php echo lang('login_forgot_password');?></a>
                                             </div>
                                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
 
