@@ -24,7 +24,7 @@
         <nav class="mdc-persistent-drawer__drawer">
             <div class="mdc-persistent-drawer__toolbar-spacer">
                 <a href="index.html" class="brand-logo">
-                    <img src="../../images/logo.svg" alt="logo">
+                    <img src="../../images/tmp_logo" alt="logo">
                 </a>
             </div>
             <div class="mdc-list-group">
@@ -121,7 +121,7 @@
                             </li>
                             <li class="mdc-list-item" role="menuitem" tabindex="0">
                                 <i class="material-icons mdc-theme--primary mr-1">power_settings_new</i>
-                                <a href="/auth/logout"> Logout</a>
+                                <a href="/index.php/auth/logout"> Logout</a>
                             </li>
                         </ul>
                     </div>
