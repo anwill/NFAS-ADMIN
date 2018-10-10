@@ -1072,8 +1072,6 @@ class Ion_auth_model extends CI_Model
                              ->get($this->tables['Club']);
             if ($club_query->num_rows() === 1) {
                 $user->club = $club_query->row();
-                var_dump($user);
-                exit();
             } else {
                 $this->set_error('login_unsuccessful: club not configured');
                 return FALSE;
@@ -2045,6 +2043,7 @@ class Ion_auth_model extends CI_Model
 		    'user_id'              => $user->id, //everyone likes to overwrite id so we'll use user_id
 		    'old_last_login'       => $user->last_login,
 		    'last_check'           => time(),
+            'club_id'              => $user->club->id
 		);
 
 		$this->session->set_userdata($session_data);
