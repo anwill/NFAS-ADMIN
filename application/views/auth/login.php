@@ -29,7 +29,8 @@
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
                         <div class="mdc-card">
                             <section class="mdc-card__primary bg-white">
-                                <form>
+                                <?php echo form_open("auth/login");?>
+
                                     <div class="mdc-layout-grid">
                                         <div class="mdc-layout-grid__inner">
                                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
@@ -64,7 +65,10 @@
                                                 <a href="#">><?php echo lang('login_forgot_password');?></a>
                                             </div>
                                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                                                <?php echo form_submit('submit', lang('login_submit_btn', 'class="mdc-button mdc-button--raised w-100" data-mdc-auto-init="MDCRipple"'));?>
+
+                                                <?php
+                                                    $attributes = array('class'=>'mdc-button mdc-button--raised w-100', 'data-mdc-auto-init'=>'MDCRipple');
+                                                    echo form_submit('submit', lang('login_submit_btn', $attributes));?>
 
                                             </div>
                                         </div>
