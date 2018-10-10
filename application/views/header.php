@@ -63,7 +63,7 @@
                             Club Details
                         </a>
                     </div>
-                    
+
 
                 </nav>
             </div>
@@ -121,7 +121,7 @@
                             </li>
                             <li class="mdc-list-item" role="menuitem" tabindex="0">
                                 <i class="material-icons mdc-theme--primary mr-1">power_settings_new</i>
-                                <a href="auth/logout"> Logout</a>
+                                <a href="/auth/logout"> Logout</a>
                             </li>
                         </ul>
                     </div>
