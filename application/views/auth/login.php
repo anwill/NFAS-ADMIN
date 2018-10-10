@@ -61,12 +61,11 @@
                                                 </div>
                                             </div>
                                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center justify-content-end">
-                                                <a href="#">Forgot Password</a>
+                                                <a href="#">><?php echo lang('login_forgot_password');?></a>
                                             </div>
                                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                                                <button class="mdc-button mdc-button--raised w-100" data-mdc-auto-init="MDCRipple">
-                                                    Login
-                                                </button>
+                                                <?php echo form_submit('submit', lang('login_submit_btn', 'class="mdc-button mdc-button--raised w-100" data-mdc-auto-init="MDCRipple"'));?>
+
                                             </div>
                                         </div>
                                     </div>
