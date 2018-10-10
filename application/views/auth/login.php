@@ -68,7 +68,7 @@
 
                                                 <?php
                                                     $attributes = array('class'=>'mdc-button mdc-button--raised w-100', 'data-mdc-auto-init'=>'MDCRipple');
-                                                    echo form_submit('submit', lang('login_submit_btn', $attributes));?>
+                                                    echo form_submit('submit', lang('login_submit_btn'), $attributes);?>
 
                                             </div>
                                         </div>
