@@ -109,18 +109,29 @@
 
                                     ?>
 
-                                    <tr>
+                                    <tr rowspan="<?php length($id['archers']); ?>">
                                         <td class="text-left"><?php echo $id['shoot']->date_start; ?></td>
                                         <td class="text-left"><?php echo $id['booking']->booker_email; ?></td>
                                         <td><?php echo $id['booking']->shoot_together; ?></td>
                                         <td><?php echo $id['booking']->shoot_days; ?></td>
-                                        <?php foreach ($id['archers'] as $archer) { ?>
+                                        <?php
+                                        $count = 1;
+                                        foreach ($id['archers'] as $archer) {
+                                            if ($count > 1) {
+                                                echo "<tr>";
+                                            }
+                                            ?>
                                             <td class="text-left"><?php echo $archer->name; ?></td>
                                             <td><?php echo $archer->class; ?></td>
                                             <td><?php echo $archer->gender; ?></td>
                                             <td><?php echo $archer->age; ?></td>
                                             <td><?php echo $archer->club; ?></td>
-                                        <?php } ?>
+                                        <?php
+                                            if ($count > 1) {
+                                                echo "</tr>";
+                                            }
+                                            $count++;
+                                        } ?>
                                     </tr>
                                 <?php }
                                 } else { ?>
