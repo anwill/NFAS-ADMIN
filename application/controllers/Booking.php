@@ -20,6 +20,7 @@ class Booking extends CI_Controller {
         if ($this->ion_auth->logged_in()) {
             $data = Array();
             $data['club'] = $this->club_model->details();
+            $data['next_shoot'] = $this->club_model->get_next_shoot();
             $this->_render_page('home', $data);
         } else {
             $this->load->view('auth/login');

@@ -29,7 +29,7 @@
                                     </div>
                                     <div class="text-wrapper pl-1">
                                         <h3 class="mdc-typography--display1 font-weight-bold mb-1">7459</h3>
-                                        <p class="font-weight-normal mb-0 mt-0">New projects</p>
+                                        <p class="font-weight-normal mb-0 mt-0">Next Shoot: <?php echo $next_shoot->date_start; ?></p>
                                     </div>
                                 </div>
                             </div>
