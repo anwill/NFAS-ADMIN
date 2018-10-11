@@ -23,6 +23,6 @@ class Shoot_model extends CI_Model
                         ->join('Booking', 'Shoot.id = Booking.shoot_id')
                         ->join('Archer', 'Booking.id = Archer.booking_id')
                         ->where('Shoot.id', $id)
-                        ->get('Shoot')->count();
+                        ->get('Shoot')->num_rows();
     }
 }
