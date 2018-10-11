@@ -64,41 +64,7 @@
 
                         </div>
                     </div>
-
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
-                        <div class="mdc-card card--with-avatar">
-                            <section class="mdc-card__primary">
-                                <div class="card__avatar"><img src="images/faces/face1.jpg" alt=""></div>
-                                <h1 class="mdc-card__title">Daniel Russel</h1>
-                                <h2 class="mdc-card__subtitle">@danielrussel</h2>
-                                <span class="social__icon-badge mdc-twitter mdi mdi-twitter"></span>
-                            </section>
-                            <section class="mdc-card__supporting-text pt-1">
-                                <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum sem non mauris euismod hendrerit.Aliquam condimentum sem non mauris euismod hendrerit.</p>
-                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum.</p>
-                            </section>
-                            <section class="mdc-card__social-footer bg-blue">
-                                <div class="col">
-                                    <small>TWEETS</small>
-                                    <p>768.8k</p>
-                                </div>
-                                <div class="col">
-                                    <small>FOLLOWING</small>
-                                    <p>186.8k</p>
-                                </div>
-                                <div class="col">
-                                    <small>FOLLOWING</small>
-                                    <p>25.8k</p>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
-                        <div class="mdc-card px-2 py-2">
-                            <div id="js-legend" class="chartjs-legend mb-2"></div>
-                            <canvas id="dashboard-monthly-analytics" height="205"></canvas>
-                        </div>
-                    </div>
+                    
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                         <div class="mdc-card table-responsive">
                             <div class="table-heading px-2 px-1 border-bottom">
