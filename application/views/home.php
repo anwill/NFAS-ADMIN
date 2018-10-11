@@ -7,9 +7,14 @@
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                         <div class="mdc-card">
                             <div class="mdc-layout-grid__inner">
-                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-7">
                                     <section class="purchase__card_section">
-                                        <pre><?php var_dump($club); ?></pre>
+                                        <?php echo $club->name; ?>
+                                    </section>
+                                </div>
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-5">
+                                    <section class="purchase__card_section">
+                                        <?php echo $club->email; ?>
                                     </section>
                                 </div>
                             </div>
