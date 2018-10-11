@@ -113,7 +113,7 @@
                                 <?php }
                                 } else { ?>
                                     <tr>
-                                        <td colspan="9">No bookings in the last week</td>
+                                        <td colspan="9">No bookings in the last two weeks</td>
                                     </tr>
                                 <?php } ?>
 
