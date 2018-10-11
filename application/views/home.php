@@ -111,10 +111,16 @@
 
                                     <tr>
                                         <td class="text-left"><?php echo $id['shoot']->date_start; ?></td>
-                                        <td class="text-left"><?php echo $id['booking']->email; ?></td>
+                                        <td class="text-left"><?php echo $id['booking']->booker_email; ?></td>
                                         <td><?php echo $id['booking']->shoot_together; ?></td>
                                         <td><?php echo $id['booking']->shoot_days; ?></td>
-
+                                        <?php foreach ($id['archers'] as $archer) { ?>
+                                            <td class="text-left"><?php echo $archer->name; ?></td>
+                                            <td><?php echo $archer->class; ?></td>
+                                            <td><?php echo $archer->gender; ?></td>
+                                            <td><?php echo $archer->age; ?></td>
+                                            <td><?php echo $archer->club; ?></td>
+                                        <?php } ?>
                                     </tr>
                                 <?php }
                                 } else { ?>
