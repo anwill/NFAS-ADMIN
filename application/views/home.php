@@ -20,6 +20,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                         <div class="mdc-card">
                             <div class="mdc-layout-grid__inner">
@@ -32,6 +33,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                         <div class="mdc-layout-grid__inner w-100">
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
