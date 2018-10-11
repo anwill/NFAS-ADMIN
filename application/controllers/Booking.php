@@ -22,7 +22,6 @@ class Booking extends CI_Controller {
             $data['club'] = $this->club_model->details();
             $data['next_shoot'] = $this->club_model->get_next_shoot();
             $data['last_shoot'] = $this->club_model->get_last_shoot();
-            $data['next_shoot']->number_archers = $this->shoot_model->number_booked_in($data['next_shoot']->id);
 
             $this->_render_page('home', $data);
         } else {

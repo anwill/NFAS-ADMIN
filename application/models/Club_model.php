@@ -6,7 +6,7 @@ class Club_model extends CI_Model
 {
     public function __construct()
     {
-
+        $this->load->model('Shoot_model');
     }
 
     /* Returns current logged in users club information */
@@ -21,22 +21,26 @@ class Club_model extends CI_Model
     public function get_next_shoot()
     {
         $club_id = $this->session->userdata['club_id'];
-        return $this->db->select('*')
+        $shoot = $this->db->select('*')
                         ->where('club_id', $club_id)
                         ->where('date_start > NOW()')
                         ->order_by('date_start DESC')
                         ->limit('1')
                         ->get('Shoot')->row();
+        $shoot->number_archers = $this->shoot_model->number_booked_in($shoot->id);
+        return $shoot;
     }
 
     public function get_last_shoot()
     {
         $club_id = $this->session->userdata['club_id'];
-        return $this->db->select('*')
+        $shoot = $this->db->select('*')
                         ->where('club_id', $club_id)
                         ->where('date_start < NOW()')
                         ->order_by('date_start DESC')
                         ->limit('1')
                         ->get('Shoot')->row();
+        $shoot->number_archers = $this->shoot_model->number_booked_in($shoot->id);
+        return $shoot;
     }
 }
