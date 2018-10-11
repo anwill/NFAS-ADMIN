@@ -69,29 +69,12 @@
                             <div class="mdc-layout-grid__inner flex-grow-1">
                                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3"></div>
                                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center flex-column">
-                                    <h2 class="mdc-card__title mdc-card__title--large text-center mt-2 mb-2">Time, Practice</h2>
+                                    <h2 class="mdc-card__title mdc-card__title--large text-center mt-2 mb-2">Next Shoot</h2>
                                     <div id="currentBalanceCircle" class="w-100"></div>
                                 </div>
                                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3"></div>
                             </div>
-                            <div class="mdc-layout-grid__inner">
-                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                                    <section class="mdc-card__action-footer mt-4 bg-red w-100">
-                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                            <i class="mdi mdi-store icon-md"></i>
-                                        </div>
-                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                            <i class="mdi mdi-phone-plus icon-md"></i>
-                                        </div>
-                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                            <i class="mdi mdi-share-variant icon-md"></i>
-                                        </div>
-                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                            <i class="mdi mdi-autorenew icon-md"></i>
-                                        </div>
-                                    </section>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
