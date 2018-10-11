@@ -29,7 +29,7 @@
                                         <i class="mdi mdi-account-settings text-white icon-md"></i>
                                     </div>
                                     <div class="text-wrapper pl-1">
-                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1">7459</h3>
+                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1"><?php echo $next_shoot->number_archers; ?></h3>
                                         <p class="font-weight-normal mb-0 mt-0">Next Shoot: <?php echo $next_shoot->date_start; ?></p>
                                     </div>
                                 </div>
@@ -43,33 +43,12 @@
                                         </div>
                                         <div class="text-wrapper pl-1">
                                             <h3 class="mdc-typography--display1 font-weight-bold mb-1">7459</h3>
-                                            <p class="font-weight-normal mb-0 mt-0">Next Shoot: <?php echo $last_shoot->date_start; ?></p>
+                                            <p class="font-weight-normal mb-0 mt-0">Last Shoot: <?php echo $last_shoot->date_start; ?></p>
                                         </div>
                                     </div>
                                 <?php } ?>
                             </div>
-                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
-                                <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
-                                    <div class="mdc--tile mdc--tile-warning rounded">
-                                        <i class="mdi mdi-ticket text-white icon-md"></i>
-                                    </div>
-                                    <div class="text-wrapper pl-1">
-                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1">569</h3>
-                                        <p class="font-weight-normal mb-0 mt-0">Open Tickets</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
-                                <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
-                                    <div class="mdc--tile mdc--tile-primary rounded">
-                                        <i class="mdi mdi-account-star text-white icon-md"></i>
-                                    </div>
-                                    <div class="text-wrapper pl-1">
-                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1">5785</h3>
-                                        <p class="font-weight-normal mb-0 mt-0">New Visitors</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
