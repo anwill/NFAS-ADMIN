@@ -47,4 +47,3 @@
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
                     </div>
                 </div>
-            
