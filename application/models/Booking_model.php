@@ -27,7 +27,7 @@ class Booking_model extends CI_Model
             ->order_by('date_booked')
             ->get('Booking');
 
-        foreach ($bookings as $b) {
+        foreach ($bookings->result() as $b) {
             // Get the archers
             $archers = $this->archer_model->get_archers_by_booking($b->id);
 

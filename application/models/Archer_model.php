@@ -24,7 +24,7 @@ class Archer_model extends CI_Model
             ->where('booking_id', $id)
             ->get('Archer');
 
-        foreach ($query as $row) {
+        foreach ($query->result() as $row) {
             array_push($archers,$row);
         }
 
