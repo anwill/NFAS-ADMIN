@@ -20,11 +20,10 @@
 <body>
 <div class="body-wrapper">
     <div class="page-wrapper">
-        <main class="auth-screen">
+        <main class="content-wrapper auth-screen">
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
-
                     </div>
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
                         <div class="mdc-card">
