@@ -31,7 +31,7 @@
                                 <div class="mdc-layout-grid">
                                     <div class="mdc-layout-grid__inner">
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                                            <img style="object-fit: contain;" class="" src="../../images/tmp_logo" alt="logo">
+                                            <img style="object-fit: fill;" class="" src="../../images/tmp_logo" alt="logo">
                                         </div>
 
                                     </div>
