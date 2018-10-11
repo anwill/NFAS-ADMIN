@@ -109,7 +109,7 @@
 
                                     ?>
 
-                                    <tr rowspan="<?php length($id['archers']); ?>">
+                                    <tr rowspan="<?php count($id['archers'])-1; ?>">
                                         <td class="text-left"><?php echo $id['shoot']->date_start; ?></td>
                                         <td class="text-left"><?php echo $id['booking']->booker_email; ?></td>
                                         <td><?php echo $id['booking']->shoot_together; ?></td>
