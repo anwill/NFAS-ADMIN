@@ -10,7 +10,6 @@
 <!-- Plugin js for this page-->
 <!-- End plugin js for this page-->
 <!-- inject:js -->
-<script src="../../js/misc.js"></script>
 <script src="../../js/material.js"></script>
 <!-- endinject -->
 <!-- Custom js for this page-->
