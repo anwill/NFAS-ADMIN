@@ -36,15 +36,17 @@
                                 <?php } ?>
                             </div>
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
-                                <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
-                                    <div class="mdc--tile mdc--tile-success rounded">
-                                        <i class="mdi mdi-basket text-white icon-md"></i>
+                                <?php if (isset($last_shoot)) { ?>
+                                    <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                                        <div class="mdc--tile mdc--tile-danger rounded">
+                                            <i class="mdi mdi-account-settings text-white icon-md"></i>
+                                        </div>
+                                        <div class="text-wrapper pl-1">
+                                            <h3 class="mdc-typography--display1 font-weight-bold mb-1">7459</h3>
+                                            <p class="font-weight-normal mb-0 mt-0">Next Shoot: <?php echo $last_shoot->date_start; ?></p>
+                                        </div>
                                     </div>
-                                    <div class="text-wrapper pl-1">
-                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1">$7783</h3>
-                                        <p class="font-weight-normal mb-0 mt-0">Total Sales</p>
-                                    </div>
-                                </div>
+                                <?php } ?>
                             </div>
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
                                 <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">

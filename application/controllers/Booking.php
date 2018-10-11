@@ -21,6 +21,7 @@ class Booking extends CI_Controller {
             $data = Array();
             $data['club'] = $this->club_model->details();
             $data['next_shoot'] = $this->club_model->get_next_shoot();
+            $data['last_shoot'] = $this->club_model->get_last_shoot();
             $this->_render_page('home', $data);
         } else {
             $this->load->view('auth/login');
