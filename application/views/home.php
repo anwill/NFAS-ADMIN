@@ -110,11 +110,11 @@
                                     ?>
 
                                     <tr>
-                                        <td class="text-left"><?php echo $club->latest[$id]['shoot']->date_start; ?></td>
-                                        <td class="text-left"><?php echo $club->latest[$id]['booking']->email; ?></td>
-                                        <td><?php echo $club->latest[$id]['booking']->shoot_together; ?></td>
-                                        <td><?php echo $club->latest[$id]['booking']->shoot_days; ?></td>
-                                        
+                                        <td class="text-left"><?php echo $id['shoot']->date_start; ?></td>
+                                        <td class="text-left"><?php echo $id['booking']->email; ?></td>
+                                        <td><?php echo $id['booking']->shoot_together; ?></td>
+                                        <td><?php echo $id['booking']->shoot_days; ?></td>
+
                                     </tr>
                                 <?php }
                                 } else { ?>
