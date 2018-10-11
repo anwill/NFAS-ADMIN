@@ -36,27 +36,6 @@
                                             <?php echo lang('forgot_password_heading');?>
                                             <p><?php echo sprintf(lang('forgot_password_subheading'), $identity_label);?></p>
                                         </div>
-                                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                                            <label class="mdc-text-field w-100">
-                                                <input type="password" name="password" value="" id="password" class="mdc-text-field__input">
-                                                <span class="mdc-text-field__label">Password</span>
-                                                <div class="mdc-text-field__bottom-line"></div>
-                                            </label>
-                                        </div>
-                                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
-                                            <div class="mdc-form-field">
-                                                <div class="mdc-checkbox">
-                                                    <input type="checkbox" name="remember" value="1"  id="remember" class="mdc-checkbox__native-control"/>
-                                                    <div class="mdc-checkbox__background">
-                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
-                                                            <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                                                        </svg>
-                                                        <div class="mdc-checkbox__mixedmark"></div>
-                                                    </div>
-                                                </div>
-                                                <label for="my-checkbox">Remember me</label>
-                                            </div>
-                                        </div>
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center justify-content-end">
                                             <?php echo (($type=='email') ? sprintf(lang('forgot_password_email_label'), $identity_label) : sprintf(lang('forgot_password_identity_label'), $identity_label));?>
                                             <br />
