@@ -7,15 +7,19 @@ class Club_model extends CI_Model
     public function __construct()
     {
         $this->load->model('shoot_model');
+        $this->load->model('booking_model');
+
     }
 
     /* Returns current logged in users club information */
     public function details()
     {
         $club_id = $this->session->userdata['club_id'];
-        return $this->db->select('*')
+        $club = $this->db->select('*')
                         ->where('id', $club_id)
                         ->get('Club')->row();
+        $club->latest = $this->booking_model->latest();
+        return $club;
     }
 
     public function get_next_shoot()

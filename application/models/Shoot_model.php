@@ -6,15 +6,18 @@ class Shoot_model extends CI_Model
 {
     public function __construct()
     {
-
+        $this->load->model('booking_model');
     }
 
     /* Returns current logged in users club information */
     public function details($id)
     {
-        return $this->db->select('*')
+        $shoot = $this->db->select('*')
             ->where('id', $id)
             ->get('Shoot')->row();
+
+
+        return $shoot;
     }
 
     public function number_booked_in($id)

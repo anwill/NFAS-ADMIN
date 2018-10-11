@@ -64,82 +64,59 @@
 
                         </div>
                     </div>
-                    
+
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                         <div class="mdc-card table-responsive">
                             <div class="table-heading px-2 px-1 border-bottom">
-                                <h1 class="mdc-card__title mdc-card__title--large">Employee status</h1>
+                                <h1 class="mdc-card__title mdc-card__title--large">Latest Bookings</h1>
                             </div>
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th class="text-left">Product</th>
-                                    <th>Cost</th>
-                                    <th>Sales amount</th>
-                                    <th>Shipping cost</th>
-                                    <th>Units sold</th>
-                                    <th>Profit generated</th>
-                                    <th>Left in stock</th>
-                                    <th>Returns</th>
-                                    <th>Actions</th>
+                                    <th class="text-left" colspan="1">Shoot</th>
+                                    <th class="text-left" colspan="3">Booking</th>
+                                    <th class="text-left" colspan="5">Archers</th>
+
+                                </tr>
+
+                                <tr>
+                                    <th class="text-left">Date</th>
+                                    <th class="text-left">Email</th>
+                                    <th class="text-left">Shoot Together</th>
+                                    <th class="text-left">Shoot Days</th>
+                                    <th class="text-left">Name</th>
+                                    <th class="text-left">Class</th>
+                                    <th class="text-left">Gender</th>
+                                    <th class="text-left">Age</th>
+                                    <th class="text-left">Club</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td class="text-left">T-shirts</td>
-                                    <td>250</td>
-                                    <td>300</td>
-                                    <td>60</td>
-                                    <td>3453</td>
-                                    <td>76</td>
-                                    <td>453643</td>
-                                    <td>300</td>
-                                    <td><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-heart text-blue"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-forum text-yellow"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-delete text-red"></i></div></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">Baseball Hat</td>
-                                    <td>457</td>
-                                    <td>204</td>
-                                    <td>35</td>
-                                    <td>6754</td>
-                                    <td>35</td>
-                                    <td>345623</td>
-                                    <td>546</td>
-                                    <td><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-heart text-blue"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-forum text-yellow"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-delete text-red"></i></div></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">Tennis Racket</td>
-                                    <td>250</td>
-                                    <td>350</td>
-                                    <td>38</td>
-                                    <td>3289</td>
-                                    <td>45</td>
-                                    <td>54662</td>
-                                    <td>278</td>
-                                    <td><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-heart text-blue"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-forum text-yellow"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-delete text-red"></i></div></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">Gloves</td>
-                                    <td>250</td>
-                                    <td>300</td>
-                                    <td>60</td>
-                                    <td>3453</td>
-                                    <td>76</td>
-                                    <td>453643</td>
-                                    <td>300</td>
-                                    <td><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-heart text-blue"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-forum text-yellow"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-delete text-red"></i></div></td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">Shoes</td>
-                                    <td>673</td>
-                                    <td>457</td>
-                                    <td>56</td>
-                                    <td>4467</td>
-                                    <td>98</td>
-                                    <td>345723</td>
-                                    <td>350</td>
-                                    <td><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-heart text-blue"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-forum text-yellow"></i></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><i class="mdi mdi-delete text-red"></i></div></td>
-                                </tr>
+                                <?php if (isset($club->latest)) {
+                                    foreach ($club->latest as $id) {
+
+                                    ?>
+
+                                    <tr>
+                                        <td class="text-left"><?php echo $club->latest[$id]->shoot->date_start; ?></td>
+                                        <td class="text-left"><?php echo $club->latest[$id]->booking->email; ?></td>
+                                        <td><?php echo $club->latest[$id]->booking->shoot_together; ?></td>
+                                        <td><?php echo $club->latest[$id]->booking->shoot_days; ?></td>
+                                        <?php foreach ($club->latest[$id]->archers as $archer) { ?>
+                                        <td class="text-left"><?php echo $archer->name; ?></td>
+                                        <td><?php echo $archer->class; ?></td>
+                                        <td><?php echo $archer->gender; ?></td>
+                                        <td><?php echo $archer->age; ?></td>
+                                        <td><?php echo $archer->club; ?></td>
+                                        <?php } ?>
+                                    </tr>
+                                <?php }
+                                } else { ?>
+                                    <tr>
+                                        <td colspan="9">No bookings in the last week</td>
+                                    </tr>
+                                <?php } ?>
+
                                 </tbody>
                             </table>
                         </div>
