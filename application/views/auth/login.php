@@ -32,7 +32,7 @@
                                     <div class="mdc-layout-grid__inner">
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                                             <a href="/index.php/booking/" class="brand-logo">
-                                                <img style="width:100%; height:100%; object-fit: cover; overflow: hidden;" src="../../images/tmp_logo" alt="logo">
+                                                <img style="width:90%; height:90%; object-fit: cover; overflow: hidden; align-content: center;" src="../../images/tmp_logo" alt="logo">
                                             </a>
                                         </div>
 
