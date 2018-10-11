@@ -20,7 +20,7 @@
                                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                                                 <label class="mdc-text-field w-100">
                                                     <input type="password" name="password" value="" id="password" class="mdc-text-field__input">
-                                                    <label class="mdc-select__label--float-above" for="password">Password</label>
+                                                    <label class="mdc-text-field__label--float-above" for="password">Password</label>
                                                     <div class="mdc-text-field__bottom-line"></div>
                                                 </label>
                                             </div>
