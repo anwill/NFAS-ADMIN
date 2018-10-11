@@ -25,7 +25,7 @@ class Archer_model extends CI_Model
             ->get('Archer');
 
         foreach ($query->result() as $row) {
-            array_push($archers,$row);
+            array_push($archers, $row);
         }
 
         return $archers;

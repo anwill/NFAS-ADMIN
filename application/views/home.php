@@ -110,12 +110,17 @@
                                     ?>
 
                                     <tr>
-                                        <td class="text-left"><?php echo $club->latest[$id]->shoot->date_start; ?></td>
-                                        <td class="text-left"><?php echo $club->latest[$id]->booking->email; ?></td>
-                                        <td><?php echo $club->latest[$id]->booking->shoot_together; ?></td>
-                                        <td><?php echo $club->latest[$id]->booking->shoot_days; ?></td>
-                                        <td><pre><?php var_dump($club->latest[$id]->archers); ?></pre></td>
-                                        
+                                        <td class="text-left"><?php echo $club->latest[$id]['shoot']->date_start; ?></td>
+                                        <td class="text-left"><?php echo $club->latest[$id]['booking']->email; ?></td>
+                                        <td><?php echo $club->latest[$id]['booking']->shoot_together; ?></td>
+                                        <td><?php echo $club->latest[$id]['booking']->shoot_days; ?></td>
+                                        <?php foreach ($club->latest[$id]['archers'] as $archer) { ?>
+                                        <td class="text-left"><?php echo $archer->name; ?></td>
+                                        <td><?php echo $archer->class; ?></td>
+                                        <td><?php echo $archer->gender; ?></td>
+                                        <td><?php echo $archer->age; ?></td>
+                                        <td><?php echo $archer->club; ?></td>
+                                        <?php } ?>
                                     </tr>
                                 <?php }
                                 } else { ?>

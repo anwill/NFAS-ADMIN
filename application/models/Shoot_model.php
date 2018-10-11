@@ -16,7 +16,6 @@ class Shoot_model extends CI_Model
             ->where('id', $id)
             ->get('Shoot')->row();
 
-
         return $shoot;
     }
 
