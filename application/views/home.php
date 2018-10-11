@@ -1,20 +1,20 @@
 
     <div class="page-wrapper mdc-toolbar-fixed-adjust">
         <main class="content-wrapper">
-            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                <div class="mdc-card">
-                    <div class="mdc-layout-grid__inner">
-                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                            <section class="purchase__card_section">
-                                <pre><?php var_dump($club); ?></pre>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
-
+                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                        <div class="mdc-card">
+                            <div class="mdc-layout-grid__inner">
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                    <section class="purchase__card_section">
+                                        <pre><?php var_dump($club); ?></pre>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
                         <div class="mdc-layout-grid__inner w-100">
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
