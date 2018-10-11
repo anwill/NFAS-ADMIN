@@ -118,7 +118,7 @@
                                         $count = 1;
                                         foreach ($id['archers'] as $archer) {
                                             if ($count > 1) {
-                                                echo "<tr>";
+                                                echo "<tr><td colspan='4'></td>";
                                             }
                                             ?>
                                             <td class="text-left"><?php echo $archer->name; ?></td>
