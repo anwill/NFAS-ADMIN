@@ -6,7 +6,7 @@ class Club_model extends CI_Model
 {
     public function __construct()
     {
-        $this->load->model('Shoot_model');
+        $this->load->model('shoot_model');
     }
 
     /* Returns current logged in users club information */
