@@ -39,9 +39,15 @@
                                             <?php echo sprintf(lang('forgot_password_subheading'), $identity_label);?>
                                         </div>
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center justify-content-end">
-                                            <?php echo (($type=='email') ? sprintf(lang('forgot_password_email_label'), $identity_label) : sprintf(lang('forgot_password_identity_label'), $identity_label));?>
-                                            <br />
-                                            <?php echo form_input($identity);?>
+                                            <label class="mdc-text-field w-100">
+                                                <?php
+                                                $attributes = array('class'=>'mdc-text-field__input');
+                                                echo form_input($identity,$attributes); 
+                                                ?>
+                                                <span class="mdc-text-field__label"><?php echo (($type=='email') ? sprintf(lang('forgot_password_email_label'), $identity_label) : sprintf(lang('forgot_password_identity_label'), $identity_label));?></span>
+                                                <div class="mdc-text-field__bottom-line"></div>
+                                            </label>
+
                                         </div>
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
 
