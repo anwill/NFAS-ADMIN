@@ -23,7 +23,7 @@
     <aside class="mdc-persistent-drawer mdc-persistent-drawer--open">
         <nav class="mdc-persistent-drawer__drawer">
             <div class="mdc-persistent-drawer__toolbar-spacer">
-                <a href="index.html" class="brand-logo">
+                <a href="/index.php/booking/" class="brand-logo">
                     <img src="../../images/tmp_logo" alt="logo">
                 </a>
             </div>
