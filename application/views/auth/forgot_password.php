@@ -18,10 +18,9 @@
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                                             <label class="mdc-text-field w-100">
                                                 <?php
-                                                $attributes = array('class'=>'mdc-text-field__input');
+                                                $attributes = array('class'=>'mdc-text-field__input', 'placeholder'=>'Email');
                                                 echo form_input($identity,'',$attributes);
                                                 ?>
-                                                <span class="mdc-text-field__label">Email</span>
                                                 <div class="mdc-text-field__bottom-line"></div>
                                             </label>
 
