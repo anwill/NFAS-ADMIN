@@ -23,6 +23,7 @@
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
                         <div class="mdc-layout-grid__inner w-100">
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                                <?php if (isset($next_shoot)) { ?>
                                 <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
                                     <div class="mdc--tile mdc--tile-danger rounded">
                                         <i class="mdi mdi-account-settings text-white icon-md"></i>
@@ -32,6 +33,7 @@
                                         <p class="font-weight-normal mb-0 mt-0">Next Shoot: <?php echo $next_shoot->date_start; ?></p>
                                     </div>
                                 </div>
+                                <?php } ?>
                             </div>
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
                                 <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
