@@ -21,6 +21,18 @@
                         </div>
                     </div>
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                        <div class="mdc-card">
+                            <div class="mdc-layout-grid__inner">
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                    <section class="purchase__card_section">
+                                        <pre><?php var_dump($club->latest); ?></pre>
+                                    </section>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                         <div class="mdc-layout-grid__inner w-100">
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
                                 <?php if (isset($last_shoot)) { ?>
