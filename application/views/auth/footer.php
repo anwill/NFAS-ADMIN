@@ -1,7 +1,7 @@
 </div>
 </main>
 </div>
-</div>
+
 <!-- body wrapper -->
 <!-- plugins:js -->
 <script src="../../node_modules/material-components-web/dist/material-components-web.min.js"></script>

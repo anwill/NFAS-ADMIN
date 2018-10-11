@@ -855,7 +855,7 @@ class Auth extends CI_Controller
 		$this->viewdata = (empty($data)) ? $this->data : $data;
 
 		$this->load->view('auth/header');
-		#$this->load->view($view, $this->viewdata, $returnhtml);
+		$this->load->view($view, $this->viewdata, $returnhtml);
         $this->load->view('auth/footer');
 
 	}
