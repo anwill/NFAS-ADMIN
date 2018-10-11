@@ -20,61 +20,8 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
                         <div class="mdc-layout-grid__inner w-100">
-                            <!-- NEXT SHOOT -->
-                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
-                                <?php if (isset($next_shoot)) { ?>
-                                <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
-                                    <div class="mdc--tile mdc--tile-danger rounded">
-                                        <i class="mdi mdi-account-settings text-white icon-md"></i>
-                                    </div>
-                                    <div class="text-wrapper pl-1">
-                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1"><?php echo $next_shoot->number_archers; ?></h3>
-                                        <p class="font-weight-normal mb-0 mt-0">Next Shoot: <?php echo $next_shoot->date_start; ?></p>
-                                    </div>
-                                </div>
-                                <?php } else { ?>
-                                    <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
-                                        <div class="text-wrapper pl-1">
-                                            <h3 class="mdc-typography--display1 font-weight-bold mb-1">No upcoming shoot</h3>
-                                        </div>
-                                    </div>
-                                <?php } ?>
-                            </div>
-                            <!-- NEXT SHOOT HOW FULL -->
-                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
-                                <div class="mdc-card d-flex flex-column">
-                                    <div class="mdc-layout-grid__inner flex-grow-1">
-                                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3"></div>
-                                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center flex-column">
-                                            <h2 class="mdc-card__title mdc-card__title--large text-center mt-2 mb-2">Time, Practice</h2>
-                                            <div id="currentBalanceCircle" class="w-100"></div>
-                                        </div>
-                                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3"></div>
-                                    </div>
-                                    <div class="mdc-layout-grid__inner">
-                                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                                            <section class="mdc-card__action-footer mt-4 bg-red w-100">
-                                                <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                                    <i class="mdi mdi-store icon-md"></i>
-                                                </div>
-                                                <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                                    <i class="mdi mdi-phone-plus icon-md"></i>
-                                                </div>
-                                                <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                                    <i class="mdi mdi-share-variant icon-md"></i>
-                                                </div>
-                                                <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                                    <i class="mdi mdi-autorenew icon-md"></i>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- LAST SHOOT -->
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
                                 <?php if (isset($last_shoot)) { ?>
                                     <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
@@ -94,10 +41,59 @@
                                     </div>
                                 <?php } ?>
                             </div>
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                                <?php if (isset($next_shoot)) { ?>
+                                <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                                    <div class="mdc--tile mdc--tile-danger rounded">
+                                        <i class="mdi mdi-account-settings text-white icon-md"></i>
+                                    </div>
+                                    <div class="text-wrapper pl-1">
+                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1"><?php echo $next_shoot->number_archers; ?></h3>
+                                        <p class="font-weight-normal mb-0 mt-0">Next Shoot: <?php echo $next_shoot->date_start; ?></p>
+                                    </div>
+                                </div>
+                                <?php } else { ?>
+                                    <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                                        <div class="text-wrapper pl-1">
+                                            <h3 class="mdc-typography--display1 font-weight-bold mb-1">No upcoming shoot</h3>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+
 
                         </div>
                     </div>
-
+                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card d-flex flex-column">
+                            <div class="mdc-layout-grid__inner flex-grow-1">
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3"></div>
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center flex-column">
+                                    <h2 class="mdc-card__title mdc-card__title--large text-center mt-2 mb-2">Time, Practice</h2>
+                                    <div id="currentBalanceCircle" class="w-100"></div>
+                                </div>
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3"></div>
+                            </div>
+                            <div class="mdc-layout-grid__inner">
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                    <section class="mdc-card__action-footer mt-4 bg-red w-100">
+                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                                            <i class="mdi mdi-store icon-md"></i>
+                                        </div>
+                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                                            <i class="mdi mdi-phone-plus icon-md"></i>
+                                        </div>
+                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                                            <i class="mdi mdi-share-variant icon-md"></i>
+                                        </div>
+                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                                            <i class="mdi mdi-autorenew icon-md"></i>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
                         <div class="mdc-card card--with-avatar">
                             <section class="mdc-card__primary">
