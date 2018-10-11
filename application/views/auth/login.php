@@ -30,8 +30,10 @@
                             <section class="mdc-card__primary bg-white">
                                 <div class="mdc-layout-grid">
                                     <div class="mdc-layout-grid__inner">
-                                        <div class="brand-logo mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                                            <img src="../../images/tmp_logo" alt="logo">
+                                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                            <a href="/index.php/booking/" class="brand-logo">
+                                                <img src="../../images/tmp_logo" alt="logo">
+                                            </a>
                                         </div>
 
                                     </div>
