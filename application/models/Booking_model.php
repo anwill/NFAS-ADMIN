@@ -25,7 +25,7 @@ class Booking_model extends CI_Model
         $bookings = $this->db->select('*')
             ->where('date_booked > DATE_SUB(NOW(), INTERVAL 7 DAY)')
             ->order_by('date_booked')
-            ->get('Booking')->row();
+            ->get('Booking');
 
         foreach ($bookings as $b) {
             // Get the archers

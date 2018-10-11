@@ -22,7 +22,7 @@ class Archer_model extends CI_Model
         $archers = [];
         $query = $this->db->select('*')
             ->where('booking_id', $id)
-            ->get('Archer')->row();
+            ->get('Archer');
 
         foreach ($query as $row) {
             array_push($archers,$row);
