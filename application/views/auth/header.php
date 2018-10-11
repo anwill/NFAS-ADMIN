@@ -19,6 +19,7 @@
 
 <body>
 <div class="body-wrapper">
+    <div class="page-wrapper">
         <main class="auth-screen">
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
