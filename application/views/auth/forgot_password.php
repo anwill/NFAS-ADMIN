@@ -34,7 +34,9 @@
                                     <div class="mdc-layout-grid__inner">
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                                             <?php echo lang('forgot_password_heading');?>
-                                            <p><?php echo sprintf(lang('forgot_password_subheading'), $identity_label);?></p>
+                                        </div>
+                                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                            <?php echo sprintf(lang('forgot_password_subheading'), $identity_label);?>
                                         </div>
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center justify-content-end">
                                             <?php echo (($type=='email') ? sprintf(lang('forgot_password_email_label'), $identity_label) : sprintf(lang('forgot_password_identity_label'), $identity_label));?>
