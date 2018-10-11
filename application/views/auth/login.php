@@ -38,6 +38,15 @@
                                 </div>
                             </section>
                         </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+                    </div>
+                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+
                         <div class="mdc-card">
                             <section class="mdc-card__primary bg-white">
                                 <?php echo form_open("auth/login");?>
