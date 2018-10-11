@@ -33,6 +33,12 @@
                                         <p class="font-weight-normal mb-0 mt-0">Next Shoot: <?php echo $next_shoot->date_start; ?></p>
                                     </div>
                                 </div>
+                                <?php } else { ?>
+                                    <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                                        <div class="text-wrapper pl-1">
+                                            <h3 class="mdc-typography--display1 font-weight-bold mb-1">No pending shoot</h3>
+                                        </div>
+                                    </div>
                                 <?php } ?>
                             </div>
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
@@ -44,6 +50,12 @@
                                         <div class="text-wrapper pl-1">
                                             <h3 class="mdc-typography--display1 font-weight-bold mb-1">7459</h3>
                                             <p class="font-weight-normal mb-0 mt-0">Last Shoot: <?php echo $last_shoot->date_start; ?></p>
+                                        </div>
+                                    </div>
+                                <?php } else { ?>
+                                    <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                                        <div class="text-wrapper pl-1">
+                                            <h3 class="mdc-typography--display1 font-weight-bold mb-1">No previous shoot</h3>
                                         </div>
                                     </div>
                                 <?php } ?>
