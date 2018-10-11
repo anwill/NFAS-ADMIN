@@ -27,8 +27,12 @@ class Club_model extends CI_Model
                         ->order_by('date_start DESC')
                         ->limit('1')
                         ->get('Shoot')->row();
-        $shoot->number_archers = $this->shoot_model->number_booked_in($shoot->id);
-        return $shoot;
+        if (isset($shoot)) {
+            $shoot->number_archers = $this->shoot_model->number_booked_in($shoot->id);
+            return $shoot;
+        }
+
+        return null;
     }
 
     public function get_last_shoot()
@@ -40,7 +44,12 @@ class Club_model extends CI_Model
                         ->order_by('date_start DESC')
                         ->limit('1')
                         ->get('Shoot')->row();
-        $shoot->number_archers = $this->shoot_model->number_booked_in($shoot->id);
-        return $shoot;
+        if (isset($shoot)) {
+            $shoot->number_archers = $this->shoot_model->number_booked_in($shoot->id);
+            return $shoot;
+        }
+
+        return null;
+
     }
 }
