@@ -32,9 +32,11 @@ class Booking_model extends CI_Model
     private function _get($id = null, $interval = 1)
     {
         $latest = array();
-        $bookings = $this->db->select('*')
+        $bookings = $this->db->select('Booking.*')
+            ->join('Shoot', 'Shoot.id = Booking.shoot_id')
+            ->join('Club', 'Club.id = Shoot.club_id')
             ->where("date_booked > DATE_SUB(NOW(), INTERVAL $interval DAY)")
-            ->where('club_id', $id)
+            ->where('Club.id', $id)
             ->order_by('date_booked')
             ->get('Booking');
 
