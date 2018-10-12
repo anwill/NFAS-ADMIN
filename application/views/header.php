@@ -100,7 +100,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="mdc-menu-anchor mr-1">
                     <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="logout-menu" data-mdc-auto-init="MDCRipple">
                         <i class="material-icons">more_vert</i>

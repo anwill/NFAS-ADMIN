@@ -19,11 +19,22 @@ class Booking_model extends CI_Model
             ->get('Booking')->row();
     }
 
-    public function latest()
+    public function latest($id)
+    {
+        return $this->_get($id, 14);
+    }
+
+    public function bookings_in_last_day($id)
+    {
+        return $this->_get($id, 1);
+    }
+
+    private function _get($id = null, $interval = 1)
     {
         $latest = array();
         $bookings = $this->db->select('*')
-            ->where('date_booked > DATE_SUB(NOW(), INTERVAL 14 DAY)')
+            ->where("date_booked > DATE_SUB(NOW(), INTERVAL $interval DAY)")
+            ->where('club_id', $id)
             ->order_by('date_booked')
             ->get('Booking');
 
@@ -43,5 +54,4 @@ class Booking_model extends CI_Model
 
         return $latest;
     }
-
 }

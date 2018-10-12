@@ -13,6 +13,7 @@ class Booking extends CI_Controller {
         $this->lang->load('auth');
 
         $this->load->model('club_model');
+        $this->load->model('messages_model');
     }
 
     public function index()
