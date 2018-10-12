@@ -5,7 +5,7 @@
             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
                 <span class="text-muted">Copyright © 2018 <a class="text-green" href="https://booking-admin.singlearrow.co.uk/">Single Arrow NFAS Booking</a>. All rights reserved.</span>
             </div>
-            
+
         </div>
     </div>
 </footer>
