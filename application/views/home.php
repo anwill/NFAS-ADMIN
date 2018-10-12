@@ -58,7 +58,7 @@
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
                                 <?php if (isset($next_shoot)) { ?>
                                 <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
-                                    <div class="mdc--tile mdc--tile-danger rounded">
+                                    <div class="mdc--tile mdc--tile-<?php echo ($next_shoot->number_archers >= ($next_shoot->targets * $next_shoot->max_per_target) ? 'danger' : 'success') ?> rounded">
                                         <i class="mdi mdi-account-settings text-white icon-md"></i>
                                     </div>
                                     <div class="text-wrapper pl-1">
