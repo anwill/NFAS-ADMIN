@@ -23,7 +23,7 @@ class Booking extends CI_Controller {
             $data['club'] = $this->club_model->details();
             $data['next_shoot'] = $this->club_model->get_next_shoot();
             $data['last_shoot'] = $this->club_model->get_last_shoot();
-
+            $data['messages'] = $this->messages_model->todays_messages();
             $this->_render_page('home', $data);
         } else {
             $this->load->view('auth/login');

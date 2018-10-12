@@ -56,4 +56,19 @@ class Club_model extends CI_Model
         return null;
 
     }
+
+    public function get_all_future_shoots()
+    {
+        $shoots = array();
+        $club_id = $this->session->userdata['club_id'];
+        $shoot = $this->db->select('*')
+            ->where('club_id', $club_id)
+            ->where('date_start >= NOW()')
+            ->order_by('date_start DESC')
+            ->get('Shoot');
+        foreach ($shoot->result() as $row) {
+            array_push($shoots, $row);
+        }
+        return $shoots;
+    }
 }
