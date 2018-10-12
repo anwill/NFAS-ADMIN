@@ -85,18 +85,13 @@
                     </a>
                     <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="notification-menu">
                         <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
-                            <li class="mdc-list-item" role="menuitem" tabindex="0">
-                                <i class="material-icons mdc-theme--primary mr-1">email</i>
-                                One unread message
-                            </li>
+                            <?php foreach ($messages as $m) { ?>
                             <li class="mdc-list-item" role="menuitem" tabindex="0">
                                 <i class="material-icons mdc-theme--primary mr-1">group</i>
-                                One event coming up
+                                <?php echo $m; ?>
                             </li>
-                            <li class="mdc-list-item" role="menuitem" tabindex="0">
-                                <i class="material-icons mdc-theme--primary mr-1">cake</i>
-                                It's Aleena's birthday!
-                            </li>
+                            <?php } ?>
+
                         </ul>
                     </div>
                 </div>
