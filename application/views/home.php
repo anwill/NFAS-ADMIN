@@ -106,7 +106,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php if (isset($club->latest)) {
+                                <?php if (count($club->latest) > 0) {
                                     foreach ($club->latest as $id) {
 
                                     ?>
