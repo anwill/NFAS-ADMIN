@@ -18,7 +18,7 @@ class Club_model extends CI_Model
         $club = $this->db->select('*')
                         ->where('id', $club_id)
                         ->get('Club')->row();
-        $club->latest = $this->booking_model->latest();
+        $club->latest = $this->booking_model->latest($club->id);
         return $club;
     }
 
