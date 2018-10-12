@@ -25,7 +25,7 @@ class Messages_model extends CI_Model
         $bookings = $this->booking_model->bookings_in_last_day($club_id);
         foreach ($bookings as $b) {
             array_push($messages,
-                "New Booking: " + $b['booking']->booker_email + " with " + count($b['archers']) + " archer(s) for " + $b['shoot']->date_start);
+                "New Booking: " . $b['booking']->booker_email . " with " . count($b['archers']) . " archer(s) for " . $b['shoot']->date_start);
 
         }
 
@@ -35,13 +35,13 @@ class Messages_model extends CI_Model
             $total_available = $s->targets * $s->max_per_target;
 
             if ($total_booked == $total_available) {
-                array_push($messages, "Shoot full: " + $s->date_start);
+                array_push($messages, "Shoot full: " . $s->date_start);
             }
             if ($total_booked > $total_available) {
-                array_push($messages, "Shoot over subscribed: " + $s->date_start);
+                array_push($messages, "Shoot over subscribed: " . $s->date_start);
             }
             if (($total_booked/$total_available) > 0.9) {
-                array_push($messages, "Shoot filling up: " + $s->date_start);
+                array_push($messages, "Shoot filling up: " . $s->date_start);
             }
 
 
