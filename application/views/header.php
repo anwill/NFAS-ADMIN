@@ -75,7 +75,7 @@
         <div class="mdc-toolbar__row">
             <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
                 <a href="#" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
-                
+
             </section>
             <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
                 <div class="mdc-menu-anchor">
@@ -100,11 +100,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="mdc-menu-anchor">
-                    <a href="#" class="mdc-toolbar__icon mdc-ripple-surface" data-mdc-auto-init="MDCRipple">
-                        <i class="material-icons">widgets</i>
-                    </a>
-                </div>
+                
                 <div class="mdc-menu-anchor mr-1">
                     <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="logout-menu" data-mdc-auto-init="MDCRipple">
                         <i class="material-icons">more_vert</i>
