@@ -96,13 +96,13 @@
                                 <tr>
                                     <th class="text-left">Date</th>
                                     <th class="text-left">Email</th>
-                                    <th class="text-left">Shoot Together</th>
-                                    <th class="text-left">Shoot Days</th>
+                                    <th>Shoot Together</th>
+                                    <th>Shoot Days</th>
                                     <th class="text-left">Name</th>
-                                    <th class="text-left">Class</th>
-                                    <th class="text-left">Gender</th>
-                                    <th class="text-left">Age</th>
-                                    <th class="text-left">Club</th>
+                                    <th>Class</th>
+                                    <th>Gender</th>
+                                    <th>Age</th>
+                                    <th>Club</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -114,7 +114,7 @@
                                     <tr rowspan="<?php count($id['archers'])-1; ?>">
                                         <td class="text-left"><?php echo $id['shoot']->date_start; ?></td>
                                         <td class="text-left"><?php echo $id['booking']->booker_email; ?></td>
-                                        <td><?php echo $id['booking']->shoot_together; ?></td>
+                                        <td><?php echo ($id['booking']->shoot_together == 1 ? 'Yes' : 'No'); ?></td>
                                         <td><?php echo $id['booking']->shoot_days; ?></td>
                                         <?php
                                         $count = 1;
