@@ -19,6 +19,7 @@ class Club_model extends CI_Model
                         ->where('id', $club_id)
                         ->get('Club')->row();
         $club->latest = $this->booking_model->latest($club->id);
+        $club->shoots = $this->get_all_future_shoots();
         return $club;
     }
 

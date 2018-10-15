@@ -31,12 +31,13 @@ class Booking extends CI_Controller {
 
     }
 
-    public function register() {
+    public function view_shoots() {
         if ($this->ion_auth->logged_in()) {
-            $this->session->set_flashdata('message', 'You already have an account');
-            $this->index();
+            $data['club'] = $this->club_model->details();
+            $this->_render_page('shoots', $data);
+
         } else {
-            $this->_render_page('register', null);
+            $this->load->view('auth/login');
         }
     }
 
