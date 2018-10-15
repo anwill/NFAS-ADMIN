@@ -44,12 +44,12 @@
                         <div class="mdc-expansion-panel" id="ui-sub-menu">
                             <nav class="mdc-list mdc-drawer-submenu">
                                 <div class="mdc-list-item mdc-drawer-item">
-                                    <a class="mdc-drawer-link" href="booking/add_shoot">
+                                    <a class="mdc-drawer-link" href="add_shoot">
                                         Add
                                     </a>
                                 </div>
                                 <div class="mdc-list-item mdc-drawer-item">
-                                    <a class="mdc-drawer-link" href="booking/view_shoots">
+                                    <a class="mdc-drawer-link" href="view_shoots">
                                         Current
                                     </a>
                                 </div>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="mdc-list-item mdc-drawer-item">
-                        <a class="mdc-drawer-link" href="booking/club">
+                        <a class="mdc-drawer-link" href="club">
                             <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
                             Club Details
                         </a>
