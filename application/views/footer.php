@@ -39,10 +39,10 @@
         <div class="mdc-dialog__scrim"></div><div class="mdc-dialog__container">
             <div class="mdc-dialog__surface">
                 <h2 id="confirmation-dialog-label" class="mdc-dialog__header__title">An error occurred</h2>
-                <section id="confirmation-dialog-description" class="mdc-dialog__content">
+                <section id="confirmation-dialog-description" class="mdc-dialog__body">
                     <?php echo $_SESSION['message']; ?>
                 </section>
-                <footer class="mdc-dialog__actions">
+                <footer class="mdc-dialog__footer">
 
                     <button type="button"
                             class="mdc-button mdc-dialog__button mdc-dialog__button--default mdc-ripple-upgraded"
