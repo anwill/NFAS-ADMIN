@@ -37,8 +37,12 @@
          role="alertdialog" aria-modal="true"
          aria-labelledby="confirmation-dialog-label" aria-describedby="confirmation-dialog-description">
         <div class="mdc-dialog__scrim"></div><div class="mdc-dialog__container">
-            <div class="mdc-dialog__surface" style="align-content: center; padding: 4px;">
-                <h2 id="confirmation-dialog-label" class="mdc-dialog__title">An error occurred</h2>
+            <div class="mdc-dialog__surface">
+                <h2 id="confirmation-dialog-label"
+                    class="mdc-dialog__title"
+                    style="align-content: center;">
+                    An error occurred
+                </h2>
                 <section id="confirmation-dialog-description" class="mdc-dialog__content mdc-dialog">
                     <?php echo $_SESSION['message']; ?>
                 </section>
