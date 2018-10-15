@@ -19,9 +19,8 @@
                                                       rows="4"
                                                       class="mdc-text-field__input"
                                                       style="width: 100%;"
-                                                      aria-controls="name-validation-message">
-                                                <?php echo $shoot->description; ?>
-                                            </textarea>
+                                                      aria-controls="name-validation-message"
+                                            ><?php echo $shoot->description; ?></textarea>
                                             <label for="tf-box" class="mdc-text-field__label mdc-text-field__label--shake">Description</label>
                                             <div class="mdc-text-field__bottom-line" style="transform-origin: 138px center"></div>
                                         </div>
