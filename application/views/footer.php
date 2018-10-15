@@ -32,15 +32,30 @@
 <!-- End custom js for this page-->
 
 <?php if (isset($_SESSION['message'])) { ?>
-    <div class="mdc-dialog__container mdc-dialog--open" id="alert-modal">
-        <div class="mdc-dialog__surface">
-            <h2 id="simple-dialog-label" class="mdc-dialog__title">An error occurred</h2>
-            <section id="simple-dialog-description" class="mdc-dialog__content">
-                <?php echo $_SESSION['message']; ?>
-            </section>
+    <div id="confirmation-dialog"
+         class="mdc-dialog mdc-dialog--open"
+         role="alertdialog" aria-modal="true"
+         aria-labelledby="confirmation-dialog-label" aria-describedby="confirmation-dialog-description">
+        <div class="mdc-dialog__scrim"></div><div class="mdc-dialog__container">
+            <div class="mdc-dialog__surface">
+                <h2 id="confirmation-dialog-label" class="mdc-dialog__title">An error occurred</h2>
+                <section id="confirmation-dialog-description" class="mdc-dialog__content">
+                    <?php echo $_SESSION['message']; ?>
+                </section>
+                <footer class="mdc-dialog__actions">
+                    <button type="button"
+                            class="mdc-button mdc-dialog__button mdc-ripple-upgraded"
+                            data-mdc-dialog-action="close"
+                            style="--mdc-ripple-fg-size:45px; --mdc-ripple-fg-scale:2.10168; --mdc-ripple-fg-translate-start:-20.9883px, -8.54297px; --mdc-ripple-fg-translate-end:15.7656px, -4.5px;">
+                        Cancel
+                    </button>
+                    <button type="button" class="mdc-button mdc-dialog__button mdc-dialog__button--default mdc-ripple-upgraded" data-mdc-dialog-action="accept">
+                        OK</button>
+                </footer>
+            </div>
         </div>
     </div>
-    
+
 <?php } ?>
 
 
