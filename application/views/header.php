@@ -79,10 +79,12 @@
             </section>
             <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
                 <div class="mdc-menu-anchor">
+                    <?php if (isset($messages)) { ?>
                     <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="notification-menu" data-mdc-auto-init="MDCRipple">
                         <i class="material-icons">notifications</i>
                         <span class="dropdown-count"><?php echo count($messages); ?></span>
                     </a>
+                    <?php } ?>
                     <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="notification-menu">
                         <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
                             <?php foreach ($messages as $m) { ?>
