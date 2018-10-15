@@ -32,7 +32,7 @@
 <!-- End custom js for this page-->
 
 <?php if (isset($_SESSION['message'])) { ?>
-    <div id="confirmation-dialog"
+    <div id="error-dialog"
          class="mdc-dialog mdc-dialog--open"
          role="alertdialog" aria-modal="true"
          aria-labelledby="confirmation-dialog-label" aria-describedby="confirmation-dialog-description">
@@ -45,6 +45,7 @@
                 <footer class="mdc-dialog__footer">
 
                     <button type="button"
+                            id="ok-button"
                             class="mdc-button mdc-dialog__button mdc-dialog__button--default mdc-ripple-upgraded"
                             data-mdc-dialog-action="accept">
                         OK</button>
@@ -52,7 +53,20 @@
             </div>
         </div>
     </div>
+    <script>
+        const dialog = new mdc.dialog.MDCDialog(document.getElementById('error-dialog'));
 
+        function closeDialog() {
+            // some stuff
+            dialog.close();
+        }
+
+        $( document ).ready( function () {
+            $('#ok-button').click(function () {
+                closeDialog();
+            });
+        });
+    </script>
 <?php } ?>
 
 
