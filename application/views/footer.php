@@ -32,7 +32,7 @@
 <!-- End custom js for this page-->
 
 <?php if (isset($_SESSION['message'])) { ?>
-    <div class="mdc-dialog__container" id="alert-modal">
+    <div class="mdc-dialog__container mdc-dialog--open" id="alert-modal">
         <div class="mdc-dialog__surface">
             <h2 id="simple-dialog-label" class="mdc-dialog__title">An error occurred</h2>
             <section id="simple-dialog-description" class="mdc-dialog__content">
@@ -40,11 +40,7 @@
             </section>
         </div>
     </div>
-    <script>
-        var dialog = new mdc.dialog.MDCDialog(document.querySelector('#alert-modal'));
-        dialog.show();
-
-    </script>
+    
 <?php } ?>
 
 
