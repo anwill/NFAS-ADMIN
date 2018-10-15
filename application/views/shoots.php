@@ -78,11 +78,11 @@
         $(document).ready(function(){
             $('#delete-button').click(function () {
                 if (confirm("Are you sure you want to delete this shoot? It will delete all booked in archers")) {
-                    alert('Deleted');
+                    alert('NOT YET IMPLEMENTED..');
                 }
             }) ;
-            $('#edit-button').click(function () {
-                alert('Editing...');
+            $('#edit-button').click(function (e) {
+                window.location('/index.php/booking/view_shoot/' + e.data('id'));
             }) ;
 
         });
