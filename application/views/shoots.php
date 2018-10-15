@@ -81,8 +81,8 @@
                     alert('NOT YET IMPLEMENTED..');
                 }
             }) ;
-            $('#edit-button').click(function (e) {
-                window.location('/index.php/booking/view_shoot/' + e.data('id'));
+            $('#edit-button').click(function () {
+                window.location('/index.php/booking/view_shoot/' + $(this).data('id'));
             }) ;
 
         });
