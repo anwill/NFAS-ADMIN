@@ -86,6 +86,7 @@
                     </a>
                     <?php } ?>
                     <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="notification-menu">
+                        <?php if (isset($messages)) { ?>
                         <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
                             <?php foreach ($messages as $m) { ?>
                             <li class="mdc-list-item" role="menuitem" tabindex="0">
@@ -95,6 +96,7 @@
                             <?php } ?>
 
                         </ul>
+                        <?php } ?>
                     </div>
                 </div>
 
