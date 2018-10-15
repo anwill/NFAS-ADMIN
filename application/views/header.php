@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>NFAS Booking Admin</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="../../node_modules/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/node_modules/mdi/css/materialdesignicons.min.css">
     <!-- endinject -->
     <!-- plugin css for this page -->
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- endinject -->
-    <link rel="shortcut icon" href="../../images/favicon.png" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         <nav class="mdc-persistent-drawer__drawer">
             <div class="mdc-persistent-drawer__toolbar-spacer">
                 <a href="/index.php/booking/" class="brand-logo">
-                    <img src="../../images/tmp_logo" alt="logo">
+                    <img src="/images/tmp_logo" alt="logo">
                 </a>
             </div>
             <div class="mdc-list-group">
