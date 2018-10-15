@@ -39,8 +39,7 @@
         <div class="mdc-dialog__scrim"></div><div class="mdc-dialog__container">
             <div class="mdc-dialog__surface">
                 <h2 id="confirmation-dialog-label"
-                    class="mdc-dialog__title"
-                    style="align-content: center;">
+                    class="mdc-dialog__title">
                     An error occurred
                 </h2>
                 <section id="confirmation-dialog-description" class="mdc-dialog__content mdc-dialog">
