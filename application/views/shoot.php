@@ -10,15 +10,18 @@
                                 <div class="template-demo">
                                     <div id="demo-tf-box-wrapper">
                                         <div id="tf-box-example" class="mdc-text-field mdc-text-field--textarea mdc-text-field--box w-100 mdc-text-field--upgraded mdc-ripple-upgraded mdc-ripple-upgraded--background-active-fill mdc-ripple-upgraded--foreground-activation mdc-text-field--invalid" style="--mdc-ripple-fg-size:208.387px; --mdc-ripple-fg-scale:1.73618; --mdc-ripple-fg-translate-start:34.3258px, -66.7172px; --mdc-ripple-fg-translate-end:69.4625px, -76.1937px;">
-                                            <input required=""
-                                                   pattern=".{1,}"
-                                                   type="text"
-                                                   name="description"
-                                                   value="<?php echo $shoot->description; ?>"
-                                                   id="tf-box"
-                                                   class="mdc-text-field__input"
-                                                   style="width: 100%;"
-                                                   aria-controls="name-validation-message">
+                                            <textarea required=""
+                                                      pattern=".{1,}"
+                                                      type="text"
+                                                      name="description"
+                                                      id="tf-box"
+                                                      cols="40"
+                                                      rows="4"
+                                                      class="mdc-text-field__input"
+                                                      style="width: 100%;"
+                                                      aria-controls="name-validation-message">
+                                                <?php echo $shoot->description; ?>
+                                            </textarea>
                                             <label for="tf-box" class="mdc-text-field__label mdc-text-field__label--shake">Description</label>
                                             <div class="mdc-text-field__bottom-line" style="transform-origin: 138px center"></div>
                                         </div>
