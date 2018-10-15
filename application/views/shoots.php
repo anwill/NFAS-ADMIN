@@ -50,10 +50,10 @@
                                         <td><?php echo $shoot->status; ?></td>
                                         <td>
                                             <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                                <i class="mdi mdi-tooltip-edit text-green"></i>
+                                                <i id="edit-button" data-id="<?php echo $shoot->id; ?>" class="mdi mdi-table-edit text-blue"></i>
                                             </div>
                                             <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                                <i class="mdi mdi-delete text-red"></i>
+                                                <i id="delete-button" data-id="<?php echo $shoot->id; ?>" class="mdi mdi-delete text-red"></i>
                                             </div>
                                         </td>
                                     </tr>
@@ -71,3 +71,18 @@
             </div>
         </div>
     </main>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#delete-button').onclick(function () {
+                if (confirm("Are you sure you want to delete this shoot? It will delete all booked in archers")) {
+                    alert('Deleted');
+                }
+            }) ;
+            $('#edit-button').onclick(function () {
+                alert('Editing...');
+            }) ;
+
+        });
+    </script>
