@@ -76,12 +76,12 @@
 
     <script>
         $(document).ready(function(){
-            $('#delete-button').onclick(function () {
+            $('#delete-button').click(function () {
                 if (confirm("Are you sure you want to delete this shoot? It will delete all booked in archers")) {
                     alert('Deleted');
                 }
             }) ;
-            $('#edit-button').onclick(function () {
+            $('#edit-button').click(function () {
                 alert('Editing...');
             }) ;
 
