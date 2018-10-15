@@ -13,7 +13,9 @@ class Booking extends CI_Controller {
         $this->lang->load('auth');
 
         $this->load->model('club_model');
+        $this->load->model('shoot_model');
         $this->load->model('messages_model');
+
     }
 
     public function index()
@@ -34,6 +36,7 @@ class Booking extends CI_Controller {
     public function view_shoots() {
         if ($this->ion_auth->logged_in()) {
             $data['club'] = $this->club_model->details();
+
             $this->_render_page('shoots', $data);
 
         } else {
@@ -41,7 +44,28 @@ class Booking extends CI_Controller {
         }
     }
 
-    public function register_result() {
+    public function view_shoot($id = null) {
+        if ($this->ion_auth->logged_in()) {
+            $data['club'] = $this->club_model->details();
+            if (! isset($id)) {
+                $this->session->set_flashdata('message', 'Invalid shoot id');
+                redirect('view_shoots');
+            }
+            $data['shoot'] = $this->shoot_moddel->details($id);
+            if (! isset($data['shoot'])) {
+                $this->session->set_flashdata('message', 'Invalid shoot id');
+                redirect('view_shoots');
+            }
+
+            $this->_render_page('shoot', $data);
+
+        } else {
+            $this->load->view('auth/login');
+        }
+    }
+
+
+    /*public function register_result() {
         // Grab the data save it to the user table
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
         $this->form_validation->set_rules('confirm_password', 'Password Confirmation', 'trim|required');
@@ -90,7 +114,7 @@ class Booking extends CI_Controller {
 
             $this->_render_page('my_scores', $data);
         }
-    }
+    }*/
 
 
 
