@@ -50,7 +50,7 @@
                                         <td><?php echo $shoot->status; ?></td>
                                         <td>
                                             <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
-                                                <i class="mdi mdi-edit text-yellow"></i>
+                                                <i class="mdi mdi-tooltip-edit text-green"></i>
                                             </div>
                                             <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
                                                 <i class="mdi mdi-delete text-red"></i>
