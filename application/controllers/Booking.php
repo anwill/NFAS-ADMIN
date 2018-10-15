@@ -49,12 +49,12 @@ class Booking extends CI_Controller {
             $data['club'] = $this->club_model->details();
             if (! isset($id)) {
                 $this->session->set_flashdata('message', 'Invalid shoot id');
-                redirect('view_shoots');
+                redirect('booking/view_shoots');
             }
             $data['shoot'] = $this->shoot_model->details($id);
             if (! isset($data['shoot'])) {
                 $this->session->set_flashdata('message', 'Invalid shoot id');
-                redirect('view_shoots');
+                redirect('booking/view_shoots');
             }
 
             $this->_render_page('shoot', $data);
