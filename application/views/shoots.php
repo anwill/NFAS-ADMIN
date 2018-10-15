@@ -82,7 +82,7 @@
                 }
             }) ;
             $('#edit-button').click(function () {
-                window.location('/index.php/booking/view_shoot/' + $(this).data('id'));
+                window.location.href = '/index.php/booking/view_shoot/' + $(this).data('id');
             }) ;
 
         });
