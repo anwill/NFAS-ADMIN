@@ -53,10 +53,11 @@
                                         Start Date
                                     </label>
                                     <div class="mdc-text-field__bottom-line mdc-text-field__bottom-line--active" style="transform-origin: 162px center"></div>
-                                    <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" id="date-start-validation-msg">
-                                        Must have a start date
-                                    </p>
+
                                 </div>
+                                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" id="date-start-validation-msg">
+                                    Must have a start date
+                                </p>
                             </div>
 
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
