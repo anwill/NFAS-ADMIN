@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="node_modules/@chenfengyuan/dist/datepicker.css">
+<link rel="stylesheet" href="node_modules/@chenfengyuan/datepicker/dist/datepicker.css">
 <div class="page-wrapper mdc-toolbar-fixed-adjust">
     <main class="content-wrapper">
 
@@ -58,8 +58,7 @@
         </div>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="/node-modules/@chenfengyuan/dist/datepicker.js"></script>
+    <script src="/node-modules/@chenfengyuan/datepicker/dist/datepicker.js"></script>
     <script>
         $(document).ready(function(){
             $('#delete-button').click(function () {
@@ -72,7 +71,7 @@
             }) ;
 
             $('[data-toggle="datepicker"]').datepicker();
-            
+
         });
 
 

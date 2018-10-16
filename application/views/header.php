@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="/images/favicon.png" />
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
 </head>
 
 <body>

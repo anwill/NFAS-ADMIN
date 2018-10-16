@@ -17,7 +17,6 @@
 <!-- body wrapper -->
 <!-- plugins:js -->
 <script src="/node_modules/material-components-web/dist/material-components-web.min.js"></script>
-<script src="/node_modules/jquery/dist/jquery.min.js"></script>
 <!-- endinject -->
 <!-- Plugin js for this page-->
 <script src="/node_modules/chart.js/dist/Chart.min.js"></script>
