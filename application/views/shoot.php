@@ -59,6 +59,8 @@
     </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
     <script src="/js/material-datetime-picker.js"></script>
     <script>
         $(document).ready(function(){
@@ -74,7 +76,6 @@
 
         });
 
-        import MaterialDateTimePicker from 'material-datetime-picker';
 
         const from = document.querySelector('.c-datepicker-input-from');
         const from_picker = new MaterialDateTimePicker()
