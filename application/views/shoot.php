@@ -36,11 +36,21 @@
                 </div>
 
                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
-                    <div class="mdc-card table-responsive">
-                        <div class="table-heading px-2 px-1 border-bottom">
-                            <h1 class="mdc-card__title mdc-card__title--large">Future Shoots</h1>
+                    <div class="mdc-card">
+                        <div class="mdc-layout-grid__inner">
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-2">
+                                Start Date
+                            </div>
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+                                <md-datepicker v-model="selectedDate" md-immediately />
+                            </div>
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-2">
+                                End Date
+                            </div>
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+                                <md-datepicker v-model="selectedDate" md-immediately />
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
