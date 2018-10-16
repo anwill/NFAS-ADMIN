@@ -47,13 +47,13 @@
                                            required=""
                                            pattern=".{1,}"
                                            type="text" id="date-start" class="mdc-text-field__input"
-                                           aria-controls="name-validation-message"
+                                           aria-controls="date-start-validation-message"
                                            value="<?php echo $shoot->date_start; ?>">
                                     <label class="mdc-text-field__label mdc-text-field__label--float-above" for="date-start">
                                         Start Date
                                     </label>
                                     <div class="mdc-text-field__bottom-line mdc-text-field__bottom-line--active" style="transform-origin: 162px center"></div>
-                                    <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" id="name-validation-msg">
+                                    <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" id="date-start-validation-msg">
                                         Must have a start date
                                     </p>
                                 </div>
