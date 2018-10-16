@@ -42,7 +42,7 @@
                     <div class="mdc-card">
                         <div class="mdc-layout-grid__inner">
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
-                                <div class="mdc-text-field">
+                                <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--box w-100 mdc-text-field--upgraded mdc-ripple-upgraded mdc-ripple-upgraded--background-active-fill mdc-ripple-upgraded--foreground-activation mdc-text-field--invalid" style="--mdc-ripple-fg-size:208.387px; --mdc-ripple-fg-scale:1.73618; --mdc-ripple-fg-translate-start:34.3258px, -66.7172px; --mdc-ripple-fg-translate-end:69.4625px, -76.1937px;">
                                     <input name="date_start" data-toggle="datepicker"
                                            type="text" id="date-start" class="mdc-text-field__input"
                                            value="<?php echo $shoot->date_start; ?>">
@@ -54,7 +54,7 @@
                             </div>
 
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
-                                <div class="mdc-text-field">
+                                <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--box w-100 mdc-text-field--upgraded mdc-ripple-upgraded mdc-ripple-upgraded--background-active-fill mdc-ripple-upgraded--foreground-activation mdc-text-field--invalid" style="--mdc-ripple-fg-size:208.387px; --mdc-ripple-fg-scale:1.73618; --mdc-ripple-fg-translate-start:34.3258px, -66.7172px; --mdc-ripple-fg-translate-end:69.4625px, -76.1937px;">
                                     <input name="date_end" data-toggle="datepicker"
                                            type="text" id="date-end" class="mdc-text-field__input"
                                            value="<?php echo $shoot->date_end; ?>">
