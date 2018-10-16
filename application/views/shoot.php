@@ -75,8 +75,8 @@
 
 
         });
-
-
+        
+        import MaterialDateTimePicker from 'material-datetime-picker';
         const from = document.querySelector('.c-datepicker-input-from');
         const from_picker = new MaterialDateTimePicker()
             .on('submit', (val) => {
