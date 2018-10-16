@@ -44,20 +44,25 @@
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
                                 <div class="mdc-text-field">
                                     <input name="date_start" data-toggle="datepicker"
-                                           type="text" id="pre-filled" class="mdc-text-field__input"
+                                           type="text" id="date-start" class="mdc-text-field__input"
                                            value="<?php echo $shoot->date_start; ?>">
-                                    <label class="mdc-floating-label mdc-floating-label--float-above" for="pre-filled">
+                                    <label class="mdc-text-field__label mdc-text-field__label--shake" for="date-start">
                                         Start Date
                                     </label>
                                     <div class="mdc-line-ripple"></div>
                                 </div>
                             </div>
-                            
-                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-2">
-                                End Date
-                            </div>
-                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
-                                <input name="date_end" data-toggle="datepicker">
+
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                                <div class="mdc-text-field">
+                                    <input name="date_end" data-toggle="datepicker"
+                                           type="text" id="date-end" class="mdc-text-field__input"
+                                           value="<?php echo $shoot->date_end; ?>">
+                                    <label class="mdc-text-field__label mdc-text-field__label--shake" for="date-end">
+                                        Start Date
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
