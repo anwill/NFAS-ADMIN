@@ -41,12 +41,18 @@
                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                     <div class="mdc-card">
                         <div class="mdc-layout-grid__inner">
-                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-2">
-                                Start Date
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                                <div class="mdc-text-field">
+                                    <input name="date_start" data-toggle="datepicker"
+                                           type="text" id="pre-filled" class="mdc-text-field__input"
+                                           value="<?php echo $shoot->date_start; ?>">
+                                    <label class="mdc-floating-label mdc-floating-label--float-above" for="pre-filled">
+                                        Start Date
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
                             </div>
-                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
-                                <input name="date_start" data-toggle="datepicker">
-                            </div>
+                            
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-2">
                                 End Date
                             </div>
