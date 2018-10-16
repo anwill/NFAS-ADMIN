@@ -67,7 +67,7 @@
                                            aria-controls="name-validation-message"
                                            value="<?php echo $shoot->date_end; ?>">
                                     <label class="mdc-text-field__label mdc-text-field__label--float-above" for="date-start">
-                                        Start Date
+                                        End Date
                                     </label>
                                     <div class="mdc-text-field__bottom-line mdc-text-field__bottom-line--active" style="transform-origin: 162px center"></div>
 
