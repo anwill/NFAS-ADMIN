@@ -45,13 +45,13 @@
                                 Start Date
                             </div>
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
-                                <input data-toggle="datepicker">
+                                <input name="date_start" data-toggle="datepicker">
                             </div>
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-2">
                                 End Date
                             </div>
                             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
-                                <input data-toggle="datepicker">
+                                <input name="date_end" data-toggle="datepicker">
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,10 @@
                 window.location.href = '/index.php/booking/view_shoot/' + $(this).data('id');
             }) ;
 
-            $('[data-toggle="datepicker"]').datepicker();
+            $('[data-toggle="datepicker"]').datepicker({
+                autoHide: true,
+                format: 'yyyy/mm/dd'
+            });
 
         });
 
